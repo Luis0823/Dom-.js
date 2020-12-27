@@ -403,6 +403,9 @@ function encodeSwich(s) {
 function $(e) {
 	return document.querySelector(e);
 }
+function _(e) {
+    return new X(e);
+}
 
 function remove(e, t) {
 	e.removeChild(t);
