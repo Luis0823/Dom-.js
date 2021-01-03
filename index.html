@@ -9,6 +9,15 @@ pre{overflow:none}code{display:block;color:#ccc;font-size:90%;white-space:no-wra
     <script src="https://raw.githack.com/Luis0823/Dom-.js/main/dom.min.js"></script>
     <script>
         hljs.initHighlightingOnLoad();
+        var docs = $("#docs");
+        _("body").onEvent("DOMContentLoaded", () => {
+            hide(docs);
+        });
+
+        function page() {
+            _("#start").hide();
+            show(docs);
+        }
     </script>
 </head>
 
@@ -411,17 +420,6 @@ pre{overflow:none}code{display:block;color:#ccc;font-size:90%;white-space:no-wra
             Biblioteca creada por DevLite
         </h4>
     </div>
-    <script>
-        var docs = $("#docs");
-        _("body").onEvent("DOMContentLoaded", () => {
-            hide(docs);
-        });
-
-        function page() {
-            _("#start").hide();
-            show(docs);
-        }
-    </script>
 </body>
 
 </html>
