@@ -8,7 +8,7 @@ pre{overflow:none}code{display:block;color:#ccc;font-size:90%;white-space:no-wra
     <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.11.0/highlight.min.js"></script>
     <script src="https://raw.githack.com/Luis0823/Dom-.js/main/dom.min.js"></script>
     <script>
-        hljs.initHighlightingOnLoad();var docs = $("#docs");_("body").onEvent("DOMContentLoaded", () => {hide(docs);});function page() {_("#start").hide();show(docs);}
+        hljs.initHighlightingOnLoad();
     </script>
 </head>
 
@@ -385,8 +385,7 @@ pre{overflow:none}code{display:block;color:#ccc;font-size:90%;white-space:no-wra
             Encriptador y desencriptador
         </h4>
         Utiliza los diferentes encriptadores y desencriptadores de Dom++<br /> Elemento Dom++ y DOM normal
-        <pre><code class="js"><br />
-        encodeBinary("Test");
+        <pre><code class="js">encodeBinary("Test");
             <br />decodeBinary("1010100 1100101 1110011 1110100 ");
             <br />encodeUTF8("Test");
             <br />decodeUTF8("Test");
@@ -408,9 +407,20 @@ pre{overflow:none}code{display:block;color:#ccc;font-size:90%;white-space:no-wra
             Dom++.js tu biblioteca perfecta!!!
         </h3>
         <h4>
-            Biblioteca creada por DevLite
+            Biblioteca creada por Luis Olguin
         </h4>
     </div>
+    <script>
+        var docs = $("#docs");
+        _("body").onEvent("DOMContentLoaded", () => {
+            hide(docs);
+        });
+
+        function page() {
+            _("#start").hide();
+            show(docs);
+        }
+    </script>
 </body>
 
 </html>
